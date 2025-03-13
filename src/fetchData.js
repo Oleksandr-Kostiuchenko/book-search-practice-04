@@ -7,7 +7,7 @@ export const fetchData = async (topic, page) => {
   const startIndex = (page - 1) * 5;
 
   const response = await axios.get(
-    `https://www.googleapis.com/books/v1/volumes?q=${topic}&printType=books&maxResults=5&startIndex=${startIndex}`
+    `https://www.googleapis.com/books/v1/volumes?q=${topic}&printType=books&maxResults=5&startIndex=${startIndex}&langRestrict=en`
   );
 
   return {

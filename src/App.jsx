@@ -3,9 +3,14 @@ import { useState, useEffect } from "react";
 import { fetchData } from "./fetchData";
 import "./App.css";
 
+//* Import icons
+import { MdDownload } from "react-icons/md";
+import { IoIosAlert } from "react-icons/io";
+
 //* Import components
 import SearchForm from "./components/searchform/SearchForm";
 import BookList from "./components/booklist/BookList";
+import Loader from "./components/loader/Loader";
 
 function App() {
   const [bookData, setBookData] = useState([]);
@@ -57,9 +62,18 @@ function App() {
       <SearchForm onSearch={handleSearch} />
       {bookData && <BookList booksArr={bookData} />}
 
-      {isLoading && <p>Loading...</p>}
-      {error && <p>Sorry! Smth went wrong</p>}
-      {hasMore && <button onClick={handleLoadMore}>Load more</button>}
+      {isLoading && <Loader />}
+      {error && (
+        <p className="errorTitle">
+          <IoIosAlert className="iconAlert" /> Sorry! Something went wrong
+        </p>
+      )}
+      {hasMore && !error && (
+        <button className="formLoadMoreButton" onClick={handleLoadMore}>
+          <MdDownload className="loadIcon" />
+          Load more
+        </button>
+      )}
     </>
   );
 }

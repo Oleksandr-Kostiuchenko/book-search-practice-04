@@ -1,0 +1,17 @@
+.bookImage {
+  width: 300px;
+  height: 350px;
+}
+
+.descriptionWrapper {
+  padding: 15px;
+}
+
+.bookTitle {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.bookDescription {
+  color: #918e8e;
+}

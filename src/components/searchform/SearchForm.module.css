@@ -1,0 +1,71 @@
+.formEl {
+  display: flex;
+  gap: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 50px;
+}
+
+.inputEl {
+  width: 500px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+
+  outline: none;
+  background-color: #272626;
+  border: 1px solid #272626;
+  color: azure;
+  font-size: 23px;
+
+  padding-left: 50px;
+
+  transition: 250ms linear box-shadow, border-color 250ms linear;
+}
+
+.inputEl:focus {
+  border-color: #3b3b3b;
+  box-shadow: 0px 0px 81px -13px rgb(56, 95, 255);
+}
+
+.inputEl:hover {
+  border-color: #5a5858;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.bookIcon {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.formButton {
+  height: 50px;
+  width: 160px;
+
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 600;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  background-color: #0f5d8e;
+
+  transition: background-color 250ms linear, transform 250ms linear;
+}
+
+.formButton:hover {
+  background-color: #0d3b58;
+  transform: scale(1.07);
+}
