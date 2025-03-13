@@ -42,7 +42,6 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #1c1d20;
-  /* background-image: url(/public/grainy.png); */
   box-shadow: inset 0px 0px 300px -8px rgba(0, 0, 0, 1);
   color: #fafafa;
   font-weight: 500;
@@ -104,8 +103,6 @@ html {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    /* padding-left: 196px; */
-    /* padding-right: 196px; */
   }
 }
 
@@ -150,7 +147,6 @@ html {
   margin-bottom: 50px;
 
   width: 300px;
-  /* height: 80px; */
   background-color: #000000;
   border-radius: 10px;
   padding: 10px;
@@ -167,4 +163,28 @@ html {
 .iconAlert {
   width: 30px;
   height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .formLoadMoreButton {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .errorTitle {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formLoadMoreButton {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .errorTitle {
+    width: 100%;
+    font-size: 14px;
+  }
 }

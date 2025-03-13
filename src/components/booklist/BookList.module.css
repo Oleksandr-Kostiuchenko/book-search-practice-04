@@ -1,5 +1,7 @@
 .bookList {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 
@@ -28,4 +30,18 @@
 
 .bookItem::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bookItem {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bookItem {
+    width: 100%;
+    height: auto;
+  }
 }

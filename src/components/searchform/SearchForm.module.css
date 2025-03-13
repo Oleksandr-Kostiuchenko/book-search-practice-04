@@ -1,15 +1,18 @@
 .formEl {
   display: flex;
+  flex-direction: column;
   gap: 15px;
 
   margin-left: auto;
   margin-right: auto;
 
   margin-bottom: 50px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .inputEl {
-  width: 500px;
+  width: 100%;
   height: 50px;
   border-radius: 8px;
   border: none;
@@ -18,7 +21,7 @@
   background-color: #272626;
   border: 1px solid #272626;
   color: azure;
-  font-size: 23px;
+  font-size: 18px;
 
   padding-left: 50px;
 
@@ -36,6 +39,7 @@
 
 .inputWrapper {
   position: relative;
+  flex: 1;
 }
 
 .bookIcon {
@@ -50,9 +54,9 @@
 
 .formButton {
   height: 50px;
-  width: 160px;
+  width: 100%;
 
-  font-size: 20px;
+  font-size: 18px;
   color: aliceblue;
   font-weight: 600;
 
@@ -68,4 +72,25 @@
 .formButton:hover {
   background-color: #0d3b58;
   transform: scale(1.07);
+}
+
+@media screen and (min-width: 768px) {
+  .formEl {
+    flex-direction: row;
+  }
+
+  .formButton {
+    width: auto;
+    min-width: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inputEl {
+    font-size: 16px;
+  }
+
+  .formButton {
+    font-size: 16px;
+  }
 }

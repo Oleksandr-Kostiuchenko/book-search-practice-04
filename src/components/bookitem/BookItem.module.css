@@ -1,6 +1,6 @@
 .bookImage {
-  width: 300px;
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .descriptionWrapper {
@@ -14,4 +14,24 @@
 
 .bookDescription {
   color: #918e8e;
+}
+
+@media screen and (max-width: 768px) {
+  .bookTitle {
+    font-size: 20px;
+  }
+
+  .bookDescription {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bookTitle {
+    font-size: 18px;
+  }
+
+  .bookDescription {
+    font-size: 12px;
+  }
 }
